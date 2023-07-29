@@ -1,0 +1,51 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6rem;
+    min-height: 100vh;
+  }
+
+  .menu {
+    position: relative;
+    left: 58rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .menuitems {
+    margin-right: 2rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .menuitems:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .title {
+    color: black;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .capsule {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 0.5rem 25rem;
+    border-radius: 0.5rem;
+  }
+
+  .details {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  .option{
+    flex-direction: column;
+  }

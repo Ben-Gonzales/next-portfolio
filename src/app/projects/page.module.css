@@ -1,0 +1,51 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6rem;
+    min-height: 100vh;
+  }
+  
+  .menu {
+    position: relative;
+    left: 58rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .menuitems {
+    margin-right: 2rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .menuitems:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .title {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .projectbox {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .calculator {
+    text-align: center;
+  }
+
+  .card:hover {
+    background-color: gray;
+  }
+
+  .context {
+    font-size: 1.5rem;
+  }
+    

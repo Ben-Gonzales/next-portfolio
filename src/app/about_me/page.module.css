@@ -1,0 +1,59 @@
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6rem;
+    min-height: 100vh;
+  }
+  .menu {
+    position: relative;
+    left: 58rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .menuitems {
+    margin-right: 2rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .menuitems:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .aboutbox {
+    flex-direction: column;
+    position: relative;
+    left: 1rem;
+    top: 10rem;
+  }
+  
+  .title {
+    font-size: 5rem;
+  }
+
+  .title2 {
+    font-size: 2rem;
+  }
+
+  .list {
+    position: relative;
+    top: 8rem;
+  }
+
+  .paragraph {
+    font-size: 1.5rem;
+  }
+  
+  .myimg {
+    align-items: center;
+  }
+
+  .characteristics {
+    flex-direction: column;
+  }

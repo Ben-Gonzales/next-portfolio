@@ -1,0 +1,38 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem;
+    min-height: 100vh;
+  }
+
+  .main td {
+    font-weight: bold;
+  }
+
+  .menu {
+    position: relative;
+    left: 58rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .menuitems {
+    margin-right: 2rem;
+    padding: 0;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .menuitems:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .title {
+    color: black;
+    text-align: center;
+  }
