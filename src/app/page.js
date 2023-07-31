@@ -17,7 +17,6 @@ const ContentContainer = styled.div `
 margin: 0;
 padding: 0;
 position: relative;
-z-index: 1;
 `;
 
 const Card = styled.section `
@@ -31,7 +30,7 @@ border-radius: 1rem;
 const Homemenu = styled.section `
 position: fixed;
 bottom: 41rem;
-z-index: 5;
+fixed: top;
 margin-bottom: 2rem;
 padding-right: 57rem;
 border-bottom: 1px solid grey;
