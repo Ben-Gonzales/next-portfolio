@@ -4,7 +4,7 @@ import { styled } from 'styled-components';
 const Homemenu = styled.section `
 position: fixed;
 bottom: 41rem;
-z-index: 5;
+
 margin-bottom: 2rem;
 padding-right: 57rem;
 border-bottom: 1px solid grey;

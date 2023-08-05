@@ -16,23 +16,12 @@ justify-content: space-around;
 const ContentContainer = styled.div `
 margin: 0;
 padding: 0;
-position: relative;
-`;
-
-const Card = styled.section `
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-border: 1px solid white;
-border-radius: 1rem;
 `;
 
 const Homemenu = styled.section `
-position: fixed;
-bottom: 41rem;
 fixed: top;
+width: 100rem;
 margin-bottom: 2rem;
-padding-right: 57rem;
 border-bottom: 1px solid grey;
 display: flex;
 align-items: center;
@@ -40,6 +29,7 @@ align-items: center;
 
 const Title = styled.h1 `
 position: relative;
+left: 5rem;
 font-size: 1.5rem;
 color: white;
 `;
@@ -59,7 +49,7 @@ export default function Home() {
   
 
   return (
-    <main className={styles.main}>
+    <ContentContainer className={styles.main}>
         <Homemenu>
           <Title>
             BG Tech
@@ -73,7 +63,7 @@ export default function Home() {
           </Menubar>
         </Homemenu>
 
-        <ContentContainer>
+        
           <Container id='Home'>
             <div className={styles.introbox}>
               <h2 className={styles.introtitle}>Welcome, I am Benedict,</h2>
@@ -86,9 +76,7 @@ export default function Home() {
               <Image src={logo} width={450} height={300} />
             </div>
           </Container>
-        </ContentContainer>
-
-        <ContentContainer>
+        
           <Container id='AboutMe' className={styles.aboutme}>
             <div>
               <Image src={aboutme} width={450} height={300} />
@@ -103,9 +91,7 @@ export default function Home() {
               </Link>
             </div>
           </Container>
-        </ContentContainer>
 
-        <ContentContainer>
           <Container id='Projects' className={styles.projects}>
             <div className={styles.projectbox}>
               <h2 className={styles.projecttitle}>Projects</h2>
@@ -120,7 +106,6 @@ export default function Home() {
               <Image src={project} width={450} height={300} />
             </div>
           </Container>
-        </ContentContainer>
-    </main>
+      </ContentContainer>
   )
 }
