@@ -4,50 +4,11 @@ import styles from './page.module.css';
 import logo from './assets/intro.png';
 import aboutme from './assets/aboutme.png';
 import project from './assets/project.png';
-import { styled } from 'styled-components';
 import Link from 'next/link';
-
-/*styled components */
-const Container = styled.section `
-display: flex;
-justify-content: space-around;
-`;
-
-const ContentContainer = styled.div `
-margin: 0;
-padding: 0;
-`;
-
-const Homemenu = styled.section `
-fixed: top;
-width: 100rem;
-margin-bottom: 2rem;
-border-bottom: 1px solid grey;
-display: flex;
-align-items: center;
-`;
-
-const Title = styled.h1 `
-position: relative;
-left: 5rem;
-font-size: 1.5rem;
-color: white;
-`;
-
-const Menubar = styled.nav `
-list-style-type: none;
-margin: 0.5rem;
-color: white;
-`;
-
-const Itemnav = styled.ul `
-display: flex;
-align-items: center;
-`;
+import {Container, ContentContainer, Homemenu, Title, Menubar, Itemnav} from './styles';
 
 export default function Home() {
   
-
   return (
     <ContentContainer className={styles.main}>
         <Homemenu>
@@ -86,9 +47,7 @@ export default function Home() {
               <p className={styles.context}>Hi I am Benedict John Gonzales, I am 21 years old, <br />
                     a student of Bachelor of Science in Information Technology<br />
                     Major in Web Development. </p>
-              <Link href='./about_me'>
-                <button className={styles.btn}>Know more about me here</button>
-              </Link>
+                <button className={styles.btn}><Link href='./about_me'>Know more about me here</Link></button>
             </div>
           </Container>
 
@@ -98,9 +57,7 @@ export default function Home() {
               <p className={styles.context}>Here are the projects or Websites that I have made in the midst <br />
               of my training in this seminar. Each one of these project is a fully <br />
               functioning website that process information and give output.</p>
-              <Link href='./projects'>
-                <button className={styles.btn1}>Check my portfolio projects</button>
-              </Link>
+                <button className={styles.btn1}><Link href='./projects'>Check my portfolio projects</Link></button>
             </div>
             <div>
               <Image src={project} width={450} height={300} />

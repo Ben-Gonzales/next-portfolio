@@ -29,6 +29,4 @@ display: flex;
 align-items: center;
 `;
 
-export {
-    Homemenu, Title, Menubar, Itemnav
-};
+export {Homemenu, Title, Menubar, Itemnav};

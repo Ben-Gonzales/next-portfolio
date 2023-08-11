@@ -3,39 +3,10 @@ import React from "react";
 import Image from 'next/image';
 import logo from '../../assets/Logo.png';
 import styles from './page.module.css'
-import { styled } from 'styled-components';
 import Link from "next/link";
 import { useState, useEffect } from 'react';
 import { Button, Form, FormControl, Container, Navbar } from 'react-bootstrap';
-
-/*styled components */
-const Homemenu = styled.section `
-position: fixed;
-bottom: 41rem;
-
-margin-bottom: 2rem;
-padding-right: 57rem;
-border-bottom: 1px solid grey;
-display: flex;
-align-items: center;
-`;
-
-const Title = styled.h1 `
-position: relative;
-font-size: 1.5rem;
-color: white;
-`;
-
-const Menubar = styled.nav `
-list-style-type: none;
-margin: 0.5rem;
-color: white;
-`;
-
-const Itemnav = styled.ul `
-display: flex;
-align-items: center;
-`;
+import {Homemenu, Title, Menubar, Itemnav} from './styles'
 
 const BasicCalculator = () => {
     const [inputvalue, setInputValue] = useState('');
