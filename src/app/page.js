@@ -4,11 +4,50 @@ import styles from './page.module.css';
 import logo from './assets/intro.png';
 import aboutme from './assets/aboutme.png';
 import project from './assets/project.png';
+import { styled } from 'styled-components';
 import Link from 'next/link';
-import {Container, ContentContainer, Homemenu, Title, Menubar, Itemnav} from './styles';
+
+/*styled components */
+const Container = styled.section `
+display: flex;
+justify-content: space-around;
+`;
+
+const ContentContainer = styled.div `
+margin: 0;
+padding: 0;
+`;
+
+const Homemenu = styled.section `
+fixed: top;
+width: 100rem;
+margin-bottom: 2rem;
+border-bottom: 1px solid grey;
+display: flex;
+align-items: center;
+`;
+
+const Title = styled.h1 `
+position: relative;
+left: 5rem;
+font-size: 1.5rem;
+color: white;
+`;
+
+const Menubar = styled.nav `
+list-style-type: none;
+margin: 0.5rem;
+color: white;
+`;
+
+const Itemnav = styled.ul `
+display: flex;
+align-items: center;
+`;
 
 export default function Home() {
   
+
   return (
     <ContentContainer className={styles.main}>
         <Homemenu>
